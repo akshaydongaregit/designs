@@ -5,21 +5,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="sidebar">
-            <div class="handle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div id="header" >
+	
+        <div class="header" >
             <div id="title">
-                <label class="title"> T Resk </label>    
-            </div>
-            <div class="user-nav">
-                <div class="help"> </div> 
+                <label class="title"> <span>G</span>reen<span>L</span>ight </label>    
             </div>
         </div>
+		
+        <div class="sidebar">
+            <div class="handle" onclick='document.querySelector(".sidebar").classList.toggle("active");'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+			<div class="side-menu">
+				<div class="menus">
+					<div class="menu">
+						<div class="menu-icon"></div>
+						<div class="menu-label"> <label>Home</label></div>
+					</div>
+					<div class="menu">
+						<div class="menu-icon"></div>
+						<div class="menu-label"> <label>Products  </label></div>
+					</div>
+					<div class="menu">
+						<div class="menu-icon"></div>
+						<div class="menu-label"> <label>About</label></div>
+					</div>
+					<div class="menu">
+						<div class="menu-icon"></div>
+						<div class="menu-label"> <label>Join Us</label></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <script type="text/javascript" src="../js/sidebar.js"></script>
     </body>
