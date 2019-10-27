@@ -29,6 +29,7 @@ body{
   background-color:#f9f9f9;
   box-shadow:-40px 1px 0px 10px #898d90;
 }
+
 .sidebar.active .handle div{
   background-color:#26c2ef;;
 }
@@ -84,6 +85,7 @@ body{
 
 .side-menu {
   background: #f5f5f500;
+  background-color:dcdcc8fa;
   width: max-content;
   height: 100vh;
 }
@@ -97,10 +99,15 @@ body{
   background: none;
   width: 100%;
   display:block;
+  margin-top:1%;
 }
 .side-menu .menus .menu:nth-child(1){
   margin-top:0px;
 }
+.side-menu .menus .menu:nth-last-child(1) .menu-label label{
+  color: #26c2ef;
+}
+
 .side-menu .menus .menu div {
   background: #2196f300;
   display:table-cell;
@@ -112,11 +119,15 @@ body{
   height:50px;
 }
 .side-menu .menus .menu .menu-label label{
- position:relative;
- top: 50%;
- transform:translate(0%,-50%);
+ display:block;
+ position:relative; 
+ transform:translate(0%,50%);
+ -moz-transform: translate(0%,-50%);
  color:#6c7e82;
- background:#f5f5dc00;
+ background:#dcdcc8fa;
+ background-color:#f0f8ff00;
+ padding-right:5px;
+ padding-left:2px;
 }
 .side-menu .menus .menu .menu-label {
   width: max-content;
@@ -144,6 +155,65 @@ body{
   letter-spacing: 1px;
 }
 
+
+/*  loader */
+@keyframes spinner{
+ 0%{ transform:rotate(-36deg); }
+ 10%{ transform:rotate(-72deg); }
+ 20%{ transform:rotate(-108deg); }
+ 30%{ transform:rotate(-144deg); }
+ 40%{ transform:rotate(-180eg); }
+ 50%{ transform:rotate(-216deg); }
+ 60%{ transform:rotate(-252deg); }
+ 70%{ transform:rotate(-288deg); }
+ 80%{ transform:rotate(-324deg); }
+ 90%{ transform:rotate(-360deg); }
+ 100%{ transform:rotate(-396deg); }
+}
+.spinner{
+  display:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  width:50px;
+  height:50px;
+  background-color:#c3a4c300;
+  border-radius:200px;
+}
+.spinner.show {
+  display:block;
+  transition:5s ease-in-out;
+}
+.spinner.show::afte {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  background-color:#f9f8f912;
+  border-radius: 200px;
+  box-shadow:0px 0px 600px 60px #9f9fc7;
+}
+.spinner.show::before{
+  content:'';
+  position:absolute;
+  top:0%;
+  left:0%;
+  width:100%;
+  height:100%;
+  background-color:#ffffff00;
+  border-radius:50%;
+  border-right:8px solid #ff7600;
+  border-top:8px solid #ffb000;
+  border-bottom:8px solid #ff0000;
+  box-sizing:border-box;
+  clip:rect(0px,100px,100px,20px);
+  animation:spinner 1s infinite;
+  z-index:1;
+}
 
 /*
  css for mobile
