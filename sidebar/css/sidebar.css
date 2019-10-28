@@ -249,16 +249,26 @@ body{
 
 .form .element{
   margin-top:10px;
-  color:#7d848c;
+  color:#8f99a5;
   margin-left:20px;
 }
 .form .element .textbox{
-  border:1px solid #9ca4a7 ;
+  border:2px solid #bfd4da ;
   border-radius:5px;
-  height:30px;
-  color:#989ca0;
+  color:#8f99a5;
   padding:1%;
+  height:5vh;
+  box-sizing:border-box;
 }
+/*.form .element:nth-child(1) .textbox{*/
+ .form *:focus{
+  outline:none;
+  border:0px solid #0000 !important;
+  box-shadow:0px 0px 2px 2px #26c2ef;
+  box-sizing:border-box;
+  border-radius:2px;
+}
+
 .form .element .button{
   border:2px solid #26c2ef ;
   border-radius:5px;
