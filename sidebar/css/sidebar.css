@@ -228,7 +228,7 @@ body{
   border-radius:10px;
   padding:2% !important;
   box-sizing:border-box;
-  box-shadow:0px 0px 2px 2px #fbf9f9;
+  box-shadow:0px 0px 2px 2px #f7f3f3;
 }
 .form *{
   background:#f5f7f900;
@@ -256,16 +256,15 @@ body{
   border:2px solid #bfd4da ;
   border-radius:5px;
   color:#8f99a5;
-  padding:1%;
+  padding:0%;
   height:35px;
-  box-sizing:border-box;
+  /*! box-sizing:border-box; */
 }
 /*.form .element:nth-child(1) .textbox{*/
  .form *:focus{
   outline:none;
   border:0px solid #0000 !important;
   box-shadow:0px 0px 2px 2px #26c2ef;
-  box-sizing:border-box;
   border-radius:2px;
 }
 
