@@ -1,0 +1,17 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<div class="card tip center">
+			<div class="head">
+				Tip 1 
+			</div>
+			<div class="body">
+			</div>
+			<div>
+				<button onclick="next"></button>
+			</div>
+		</div>
+	</body>
+</html>
